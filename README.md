@@ -20,6 +20,7 @@ pip install gpusitter
 ```
 
 ## Usage
+
 > [!IMPORTANT]
 > Make sure the job environment (especially the Python environment) is correctly set up before running `gpust`. There are two common ways to do this:
 >
