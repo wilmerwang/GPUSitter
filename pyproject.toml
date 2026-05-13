@@ -6,7 +6,7 @@ authors = [
 maintainers = [
   {"name" = "Wilmer Wang", "email" = "wangwei0206@foxmail.com"}
 ]
-version = "2.1.0"
+version = "2.1.1"
 description = "Watch for idle GPUs and run your jobs: launches jobs in tmux, keeps logs/status and sends start/finish emails.."
 readme = "README.md"
 requires-python = ">=3.12"
