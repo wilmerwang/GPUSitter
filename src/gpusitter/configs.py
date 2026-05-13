@@ -29,7 +29,7 @@ class ConfigManager:
         if config_path is None:
             config_path = self.search_config_file()
 
-        self.config_path = config_path if config_path else Path.home() / ".config" / "gpusnatcher" / "gpusnatcher.toml"
+        self.config_path = config_path if config_path else Path.home() / ".config" / "gpusitter" / "gpusitter.toml"
         self.config: ConfigData = ConfigData()
 
     @property
