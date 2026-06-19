@@ -43,7 +43,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(add_help=False)
 
     parser.add_argument("--gpu", type=int, default=0)
-    parser.add_argument("--duration", type=float, default=0.5)
+    parser.add_argument("--duration", type=float, default=6)
     parser.add_argument("--ratio", type=float, default=0.9)
 
     # Ignore all unknown args
@@ -109,6 +109,7 @@ def run_fake_training_loop(
     print(f"[INFO] Running fake workload for {duration} seconds")
 
     while time.time() < end_time:
+        time.sleep(1e-6)
         # Heavy CUDA ops
         c = torch.matmul(a, b)
 
